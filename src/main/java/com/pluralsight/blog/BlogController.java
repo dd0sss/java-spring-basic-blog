@@ -9,9 +9,9 @@ public class BlogController {
 
 
     @RequestMapping("/")
-    public String listPosts(String home, ModelMap modelMap){
+    public String listPosts( ModelMap modelMap){
         modelMap.put("title","BLOG Post 1");
-        return home;
+        return "home";
     }
 
 
